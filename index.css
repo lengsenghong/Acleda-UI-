@@ -1,0 +1,270 @@
+/* Apply box-sizing universally */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* General body styles */
+body {
+  margin-top: 20px;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Main container */
+.main {
+  max-width: 420px;
+  margin: 0 auto; /* Centers the main container */
+  height: auto;
+  background-color: #1e344e;
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Header row for logo and icons */
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo styling */
+.logo {
+  width: 200px;
+  height: auto;
+}
+
+/* Icons in the header */
+.icons {
+  display: flex;
+  gap: 15px;
+}
+
+/* Headphone and scanner icons styling */
+.headphone,
+.scanner {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.headphone:hover,
+.scanner:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+/* Profile section */
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Profile logo */
+.profile-logo {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Profile text */
+.profile-text h3 {
+  margin: 0;
+}
+
+.profile-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* Balance box styling */
+.balance-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0b2b4b;
+  border: 1px solid #00bfff; /* Border color */
+  padding: 15px;
+  border-radius: 15px; /* Rounded corners */
+  color: white;
+}
+
+/* Left side of balance box */
+.balance-left {
+  display: flex;
+  align-items: center;
+}
+
+/* Circle inside the balance box */
+.balance-circle {
+  position: relative;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #0b2b4b; 
+  border: 7px solid transparent; /* Base border */
+  border-top-color: gold; 
+  border-right-color: #00bfff; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Wallet icon inside the balance circle */
+.wallet-icon {
+  font-size: 24px; 
+  color: white;
+}
+
+/* Balance text inside the circle */
+.balance-text {
+  font-size: 14px; 
+}
+
+/* Right side of balance box */
+.balance-right {
+  flex-grow: 1; /* Takes the remaining space */
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: flex-end; /* Align items to the right */
+  padding-left: 20px; /* Space between left and right sections */
+}
+
+/* Top part of balance section */
+.balance-top {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+
+/* Balance label styling */
+.balance-label {
+  font-weight: bold;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+/* Eye icon */
+.eye-icon {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* Balance values styling */
+.balance-values {
+  margin-top: 5px;
+  font-size: 16px;
+  text-align: right;
+}
+
+/* Currency icon */
+.currency-icon {
+  margin-left: 5px;
+}
+
+/* Riel currency icon */
+.currency-icon-riel {
+  margin-left: 5px;
+  margin-top: 5px;
+  font-size: 20px;
+  text-align: right;
+  color: gold;
+}
+
+/* Payment and mobile top-up section */
+.payment-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Payment and mobile box styling */
+.payment-box{
+  display: flex;
+  align-items: center;
+  background-color: #0b2b4b;
+  border: 2px solid #00bfff;
+  border-radius: 10px;
+  padding: 15px;
+  width: 180px;
+  text-align: left;
+}
+.mobile-box {
+    display: flex;
+  align-items: center;
+  background-color: #0b2b4b;
+  border: 2px solid #00bfff;
+  border-radius: 10px;
+  padding: 18px;
+  width: 180px;
+  text-align: left;
+}
+
+/* Payment box left section */
+.payment-left,
+.mobile-right {
+  display: flex;
+  align-items: center;
+}
+
+/* Icons inside payment box */
+.payment-left i,
+.mobile-right i {
+  font-size: 24px;
+  color: white;
+  margin-right: 10px;
+}
+
+/* Labels inside payment and mobile box */
+.payment-label,
+.mobile-label {
+  font-size: 16px;
+  color: white;
+}
+
+/* Feature grid */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  padding: 0px;
+}
+
+/* Feature box */
+.feature-box {
+  background-color: #0b2b4b;
+  border: 1px solid #00bfff;
+  border-radius: 15px;
+  padding: 25px 10px;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Icon inside the feature box */
+.feature-box i {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: white;
+}
